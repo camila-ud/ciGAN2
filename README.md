@@ -32,14 +32,32 @@ tf_upgrade_v2 \
 
 Unzip models.zip in the same folder. The model must be in `./models`
 
-# to validate the model
+# Model pretrained
+## To validate the model
 
 `python3 run.py --val`
-
-# to synthesize one patch
+## To synthesize one patch
 
 `python3 run.py --syn id`
 
-# to synthesize 8 patches
+## To synthesize 8 patches
 
 `python3 run.py --convert`
+
+# Notebooks
+### Preprocessing dataset
+1. Notebook : 1.preprocessing.ipynb
+2. Generate patches : prepare.py
+
+### Graphs from the experiments
+
+Notebook : 2.graphs.ipynb
+
+# Train a new model
+```python
+experiment_end.py`
+epochs = 60000
+#Suggested configuration
+exp_no_vgg("lsgan",1e-4,"rms")
+```
+    
