@@ -7,6 +7,7 @@ Ref : ![mammo-GAN](https://github.com/ericwu09/mammo-cigan)
 ![](/images/demo.gif)
 
 ## Dependances
+```python 
 h5py==2.8.0
 scipy==1.1.0
 imageio==2.5.0
@@ -17,23 +18,28 @@ scikit_image==0.14.1
 tensorflow==1.13.1
 hickle==3.4.5
 requests
-
+```
 ## update code to tf2
-`tf_upgrade_v2 \
+```python 
+tf_upgrade_v2 \
   --intree ./ \
   --outtree ./p2/ \
-  --reportfile report.txt`
+  --reportfile report.txt
+``` 
 
-#Download VGGModel and ciGAN2 pretrained
-python3 download_model.py
+# Download VGGModel and ciGAN2 pretrained
+`python3 download_model.py`
 
-Unzip models.zip in the same folder. The model must be in ./models
+Unzip models.zip in the same folder. The model must be in `./models`
 
-#to validate the model
-python3 run.py --val
+# to validate the model
 
-#to synthesize one patch
-python3 run.py --syn id
+`python3 run.py --val`
 
-#to synthesize 8 patches
-python3 run.py --convert
+# to synthesize one patch
+
+`python3 run.py --syn id`
+
+# to synthesize 8 patches
+
+`python3 run.py --convert`
