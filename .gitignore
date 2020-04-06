@@ -1,0 +1,5 @@
+# ignore all logs
+VGG_Model
+__pycache__
+models
+
