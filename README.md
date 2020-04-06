@@ -30,7 +30,19 @@ tf_upgrade_v2 \
 # Download VGGModel and ciGAN2 pretrained
 `python3 download_model.py`
 
+#### Create a virtualenv
+```python
+virtualenv --python=python3 envCiGAN2
+source envCiGAN2/bin/activate
+git clone https://github.com/camila-ud/ciGAN2.git
+cd ciGAN2
+pip install -r requirements.txt 
+pip install tensorflow==1.13.1
+python3 download_model.py 
+```
+
 Unzip models.zip in the same folder. The model must be in `./models`
+
 
 # Model pretrained
 ## To validate the model
