@@ -1,12 +1,14 @@
 from train import *
 
-"experiment"
-patch_size = 256
-#learn_rate = 1e-4
-batch_size = 8
-l1_factor = 1200.0
 
 def get_model():
+    "experiment"
+    patch_size = 256
+    #learn_rate = 1e-4
+    batch_size = 8
+    l1_factor = 1200.0
+    epochs = 60000
+
     type_ = "lsgan"
     learn_rate = 1e-4
     opt = "rms"
